@@ -86,7 +86,7 @@ section img#frontforest {
 }
 #text {
   position: relative;
-  color: darkslateblue;
+  color: lightgreen;
   white-space: nowrap;
   font-size: 7.5vw;
   z-index: 9;
