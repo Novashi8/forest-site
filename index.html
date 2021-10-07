@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Paralax Scroll</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <a href="#" class="logo">Logo</a>
+      <ul>
+        <li><a href="#" class="active">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Work</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </header>
+    <section>
+      <img src="./images/moon.png" alt="moon" id="moon" />
+      <img src="./images/backforest.png" alt="back forest" id="backforest" />
+      <h2 id="text">Night forest</h2>
+      <a href="#sec" id="btn">Explore</a>
+      <img src="./images/Frontforest.png" alt="front forest" id="frontforest" />
+    </section>
+    <div class="sec" id="sec">
+      <h2>Paralax Scrolling Effect</h2>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi ex
+        quam voluptas ea suscipit, ut autem asperiores nam cumque sed deleniti
+        quibusdam temporibus aperiam quidem officiis repellat ipsa blanditiis
+        impedit! Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit,
+        mollitia in voluptatem quam dignissimos, numquam repudiandae dolorem,
+        dolore obcaecati eveniet maxime hic delectus iusto rem! Deleniti
+        doloremque et dignissimos corporis quod suscipit odit sint impedit
+        voluptatibus obcaecati, atque ducimus ea ipsum aut eius laudantium
+        nostrum accusamus explicabo pariatur assumenda mollitia! <br /><br />
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ratione,
+        temporibus perferendis vitae, minima culpa exercitationem nemo aperiam
+        unde quisquam saepe velit aliquam! Pariatur repellendus ad distinctio
+        laboriosam numquam eos magni! Lorem ipsum dolor sit amet consectetur
+        adipisicing elit. Pariatur ullam sed quas sunt ut illum, neque dolore
+        nesciunt, est accusantium sit! Iusto totam voluptatibus earum molestiae
+        recusandae optio in laborum neque repudiandae unde corporis iste quidem,
+        possimus tempora, perferendis, dicta atque. Ut porro fugit in laudantium
+        culpa sequi nulla quidem? <br /><br />
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla
+        distinctio ducimus at expedita, repudiandae harum et atque minima nihil
+        recusandae voluptate nobis in eum quas neque sequi fugit suscipit.
+        Culpa. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit
+        qui perferendis neque, molestias doloribus dolores quam pariatur nostrum
+        dignissimos velit vel mollitia ipsam voluptatum distinctio suscipit
+        perspiciatis quas doloremque. Cupiditate minima vero sit quod iure!
+        Natus ipsum minima odio quas sequi dicta non, exercitationem
+        perspiciatis culpa vel eius facilis! Labore.<br /><br />
+      </p>
+    </div>
+    <script>
+      let moon = document.getElementById("moon");
+      let backforest = document.getElementById("backforest");
+      let text = document.getElementById("text");
+      let btn = document.getElementById("btn");
+      let frontforest = document.getElementById("frontforest");
+
+      window.addEventListener("scroll", function () {
+        let value = window.scrollY;
+        moon.style.top = value * 0.25 + "px";
+        backforest.style.top = value * 0.25 + "px";
+        text.style.marginRight = value * 4 + "px";
+      });
+    </script>
+  </body>
+</html>
